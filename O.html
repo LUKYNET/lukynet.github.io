@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>LUKYNET</title>
+    <link rel="icon" href="icon.png">
+    <link rel="stylesheet" href="225.css">
+    <meta name="viewport" content="width=device-width, initial-sclae=1.0">
+  </head>
+  <body>
+<div class="sidebar">
+  <a href="index">Domů</a>
+  <a class="active" href="">O Serveru</a>
+  <a href="Updaty">Updaty</a>
+</div>
+      <div class="about-section">
+        <div class="inner-width">
+          <h1>O serveru</h1>
+          <div class="border"></div>
+          <div class="about-section-row">
+            <div class="about-section-col">
+              <div class="about">
+                <p>
+                  Toto je stránka o našem serveru.
+                </p>
+                <p>Naším úkolem je vám co nejvíce ulehčit hraní<span id="dots">...</span><span id="more" style="display:none">, tak doufám, že naší práci oceníte a že si také koupíte vip, a pomůžete tím serveru.</span></p>
+                <a id="myBtn" onclick="myFunction()">Číst Více</a>
+              </div>
+            </div>
+            <div class="about-section-col">
+              <div class="skills">
+                <div class="skill">
+                  <div class="title">Design Webu</div>
+                  <div class="progress">
+                    <div class="progress-bar p1"><span>35%</span></div>
+                  </div>
+                </div>
+
+                <div class="skill">
+                  <div class="title">Design UI</div>
+                  <div class="progress">
+                    <div class="progress-bar p2"><span>34%</span></div>
+                  </div>
+                </div>
+
+                <div class="skill">
+                  <div class="title">Design UX</div>
+                  <div class="progress">
+                    <div class="progress-bar p3"><span>38%</span></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <script>
+      function myFunction() {
+        var dots = document.getElementById("dots");
+        var moreText = document.getElementById("more");
+        var btnText = document.getElementById("myBtn");
+
+        if (dots.style.display === "none") {
+          dots.style.display = "inline";
+          btnText.innerHTML = "Číst Více";
+          moreText.style.display = "none";
+        } else {
+          dots.style.display = "none";
+          btnText.innerHTML = "Číst Méně";
+          moreText.style.display = "inline";
+        }
+      }
+      </script>
+  </body>
+</html>
